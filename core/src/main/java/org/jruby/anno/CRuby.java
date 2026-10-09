@@ -47,6 +47,8 @@ import java.lang.annotation.Target;
  * Use it in place of a {@code // MRI: rb_foo} comment or a Javadoc that only names the C function, so tools can
  * audit the mapping and documentation can link to the C source. It is retained at runtime so that tools working from a
  * live JRuby (IRB, RI, language servers) can find it by reflecting on the Java method behind a Ruby method.
+ *
+ * {@code tool/cruby_annotations.rb} checks the names and files against a CRuby checkout.
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

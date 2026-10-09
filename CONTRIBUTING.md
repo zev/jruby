@@ -53,7 +53,7 @@ When a method, class or field implements or ports a CRuby C function or macro, a
 public IRubyObject begin(ThreadContext context, IRubyObject index) {
 ```
 
-`file` is optional. Repeat the annotation when one Java method covers several C functions, and use `note` for qualifiers such as `note = "first half"`.
+`file` is optional. Repeat the annotation when one Java method covers several C functions, and use `note` for qualifiers such as `note = "first half"`. `tool/cruby_annotations.rb` checks the annotations against a CRuby checkout.
 
 ## Testing
 
